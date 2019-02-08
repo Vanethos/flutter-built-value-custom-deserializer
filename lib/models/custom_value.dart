@@ -20,9 +20,10 @@ abstract class CustomValue implements Built<CustomValue, CustomValueBuilder> {
 class CustomDataSerializer implements StructuredSerializer<CustomValue> {
   @override
   Iterable<Type> get types => [
-        CustomValue,
-        _$CustomValue,
+        CustomValue, // variable type
+        _$CustomValue, // internal built_value type
       ];
+  // name of the variable we are going to Serialize
   @override
   final String wireName = 'CustomValue';
 
