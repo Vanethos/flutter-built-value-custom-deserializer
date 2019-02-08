@@ -16,7 +16,7 @@ void main() {
     expect(customValue.values, isNull);
   });
 
-  test("Single value", () {
+  test("Multiple values", () {
     var value1 = "test";
     var value2 = "system";
     var value = '["$value1", "$value2"]';
